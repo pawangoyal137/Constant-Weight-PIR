@@ -1,3 +1,6 @@
+
+# **This is the copy of original Constant-weight PIR with few modifications**
+
 # Constant-weight PIR
 
 Implementation of Constant-Weight Private Information Retrieval Using Constant-weight Equality Operators
