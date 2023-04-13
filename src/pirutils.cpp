@@ -73,7 +73,7 @@ void QueryParameters::set_query_specific_parameters(){
             break;
         case Constant_Weight:
             this->encoding_size = hamming_weight;
-            while(choose(this->encoding_size,this->hamming_weight) < (1 << this->keyword_bitlength)) {
+            while(choose(this->encoding_size,this->hamming_weight) < (1ULL << this->keyword_bitlength)) {
                 this->encoding_size++;
             };
             break;

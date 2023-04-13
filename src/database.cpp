@@ -3,7 +3,8 @@
 Database::Database(uint64_t __num_keywords, uint64_t __max_item_hex_length, uint64_t __MAX_KEYWORD_BITLENGTH){
     this->num_keywords = __num_keywords;
     this->max_item_hex_length = __max_item_hex_length;
-    if (__num_keywords <= (1 << __MAX_KEYWORD_BITLENGTH)){
+    // cout << "Keyword bitlength " << __num_keywords << " "<< __MAX_KEYWORD_BITLENGTH << " " << (__num_keywords <= (1ULL << __MAX_KEYWORD_BITLENGTH)) << endl;
+    if (__num_keywords <= (1ULL << __MAX_KEYWORD_BITLENGTH)){
         this->MAX_KEYWORD_BITLENGTH = __MAX_KEYWORD_BITLENGTH;
     } else {
         this->MAX_KEYWORD_BITLENGTH = ceil(log2(this->num_keywords));
